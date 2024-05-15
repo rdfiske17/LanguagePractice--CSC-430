@@ -1,0 +1,13 @@
+Use this document as instructions as to how the files work together in this folder
+
+1. FORTRANEvaluation.docx is the writeup for this assignment
+2. sortingalgorith.bat compiles FortranSortingAlgorith.f90 and sortingAlgorithm.f90 together and executes the generated .exe files (sorting_algorithm.exe).
+    This should work right out of the box, otherwise here are the commands used to compile and execute:
+
+    @ECHO OFF
+    gfortran -o sorting_algorithm sortingAlgorithm.f90 FortranSortingAlgorithm.f90
+    pause
+    start sorting_algorithm.exe
+
+    Note: The program is paused to ensure the exe is created before it is attempted to be executed. Press any key to continue, and type and letters then hit enter to exit the exe file.
+
